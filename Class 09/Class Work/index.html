@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            /* gap: 100px; */
+            /* margin: 0 50px; */
+            background-color:#1C1018;
+            /* width: 100%; */
+            /* height: 800px; */
+            padding: 170px;
+            margin: auto;
+        }
+
+        a{
+            color: white;
+            background-color: black;
+            padding: 8px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .box{
+            max-width: 300px;
+            color: aliceblue;
+            margin: auto;
+            border: solid gray 3px;
+            padding: 30px;
+            margin: 0 15px;
+            max-height: 500px;
+            animation: movein
+             2s ease-in infinite alternate forwards;
+            /* transform: scale(0.9); */
+            /* transform: rotate(-20deg); */
+            /* transform: translate(100px, 250px); */
+            /* transform: translateX(300px); */
+            /* position: absolute; */
+        }
+
+        .box:nth-child(1){
+            background-color:#414288;
+            color: white;
+            transition: all 0.2s linear 
+            /* transform: scale(1.2); */
+            /* transform: skewX(50deg); */
+            /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
+        }
+
+        .box:hover:nth-child(1){
+            transform: matrix(1, 0, 0, 1, 0, -20);
+            background-color:#85FFC7;
+            color: black;
+        }
+        
+        .box:nth-child(2){
+            background-color:#0E9594;
+            color: white;
+            transition: all 0.2s ease-out 
+            /* transform: scale(1.2); */
+            /* transform: skewX(50deg); */
+            /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
+        }
+
+        .box:hover:nth-child(2){
+            transform: matrix(1, 0, 0, 1, 0, -20);
+            background-color:#85FFC7;
+            color: black;
+        }
+
+        .box:nth-child(3){
+            background-color:#FF6663;
+            color: white;
+            transition: all 0.2s ease-out 
+            /* transform: scale(1.2); */
+            /* transform: skewX(50deg); */
+            /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
+        }
+
+        .box:hover:nth-child(3){
+            transform: matrix(1, 0, 0, 1, 0, -20);
+            background-color:#85FFC7;
+            color: black;
+        }
+/* 
+        @keyframes movein{
+            form{
+                transform: ();
+            }
+
+            to{
+                transform: translate(50px);
+            }
+        } */
+
+    </style>
+
+        <div class="container">
+            <div class="box">
+                <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam culpa quam amet in cupiditate dolorum eius deserunt, eaque esse velit ipsum aut dolore sed maxime, ea a officia. Magni a nobis earum laudantium libero.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="box">
+                <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam culpa quam amet in cupiditate dolorum eius deserunt, eaque esse velit ipsum aut dolore sed maxime, ea a officia. Magni a nobis earum laudantium libero.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="box">
+                <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam culpa quam amet in cupiditate dolorum eius deserunt, eaque esse velit ipsum aut dolore sed maxime, ea a officia. Magni a nobis earum laudantium libero.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+</body>
+</html>
